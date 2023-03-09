@@ -1,0 +1,119 @@
+:root {
+  --bg-main: rgb(243, 242, 239);
+
+  --color-primary: rgb(10, 102, 194);
+  --color-action: rgb(203, 16, 23);
+  --color-attention: rgb(5, 118, 65);
+
+  --color-text: rgba(0, 0, 0, 0.9);
+  --color-text-light: rgba(0, 0, 0, 0.6);
+
+  --color-faint: rgba(0, 0, 0, 0.08);
+
+  --input-background: rgb(238 243 248);
+
+  --nav-text: rgba(0, 0, 0, 0.6);
+  --nav-active: rgb(25, 25, 25);
+
+  --btn-primary: rgb(10, 102, 194);
+  --btn-primary-on-hover: rgb(0, 65, 130);
+
+  --btn-primary-ghost: rgb(10, 102, 194);
+  --btn-primary-ghost-border: rgb(10, 102, 194);
+  --btn-primary-ghost-bg-on-hover: #e2f0fe;
+
+  --btn-secondary-ghost: rgba(0, 0, 0, 0.6);
+  --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
+  --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08);
+
+  /* shadows
+  font-sizes */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px, 10px/16px = 62.5% */
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  font-size: 1.6rem;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
+    Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  color: var(--color-primary);
+  height: 4.1rem;
+  width: 4.1rem;
+  margin-right: 0.4rem;
+  margin-left: -0.3rem;
+}
+.logo-svg {
+  height: inherit;
+  width: inherit;
+}
+.search-box {
+  height: 3.5rem;
+  width: 28rem;
+  background-color: var(--input-background);
+  border-radius: 0.4rem;
+}
+
+.nav {
+  height: 5.3rem;
+  font-size: 1.2rem;
+  line-height: 1.3333;
+  background-color: white;
+
+  border-bottom: 1px solid var(--color-faint);
+  overflow: hidden; /* border-bottom: 1px solid var(--color-faint); */
+}
+.nav-container {
+  height: 100%;
+  width: 113rem;
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-left {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-centre {
+}
+
+.nav-right {
+}
