@@ -159,24 +159,26 @@ nav a:active {
 }
 
 .nav-left {
+  height: 100%;
   display: flex;
   align-items: center;
-}
-
-.nav-main {
-  border-right: 1px solid var(--color-faint);
-  display: flex;
   margin-right: auto;
 }
 
 .nav-centre {
+  height: 100%;
   display: flex;
+  align-items: center;
+  border-right: 1px solid var(--color-faint);
 }
 
 .nav-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.nav-right .nav-icon-container {
+.nav-right .nav-icon-container:first-child {
   padding-left: 1.2rem;
 }
 
