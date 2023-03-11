@@ -286,6 +286,11 @@ nav a:active {
   align-items: center;
 }
 
+.flex-top {
+  display: flex;
+  align-items: flex-start;
+}
+
 /* BUTTONS */
 .button {
   text-align: center;
