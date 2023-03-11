@@ -69,6 +69,10 @@ video {
   max-width: 100%;
 }
 
+svg {
+  display: block;
+}
+
 /* $NAVIGATION */
 
 .logo {
@@ -192,14 +196,9 @@ nav a:active {
   width: 8rem;
 }
 
-.svg-container {
-  position: relative;
-}
-
-.nav svg {
+/* .nav svg {
   display: block;
-  position: relative;
-}
+} */
 
 .home-container::after {
   content: "";
@@ -227,12 +226,16 @@ nav a:active {
 }
 
 .hero-image-container {
-  margin-bottom: 6.8rem;
+  margin-bottom: 5.8rem;
   position: relative;
 }
 
-.hero-text-container {
+.hero-main-container {
   padding: 0rem 2.5rem;
+}
+
+.hero-title-container {
+  margin-bottom: 3.2rem;
 }
 
 .hero-image {
@@ -277,9 +280,82 @@ nav a:active {
 .display-block {
   display: block !important;
 }
-.flex {
+.flex-centre {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+/* BUTTONS */
+.button {
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1.6rem;
+  height: 3.2rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  /* --btn-primary-ghost: rgb(10, 102, 194);
+  --btn-primary-ghost-border: rgb(10, 102, 194);
+  --btn-primary-ghost-bg-on-hover: #e2f0fe;
+
+  --btn-secondary-ghost: rgba(0, 0, 0, 0.6);
+  --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
+  --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08); */
+}
+.button-primary {
+  background-color: var(--btn-primary);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: var(--btn-primary-on-hover);
+}
+
+.button-primary-ghost {
+  background-color: white;
+  color: var(--btn-primary-ghost);
+  border: 1px solid var(--btn-primary-ghost);
+}
+.button-primary-ghost:hover {
+  background-color: var(--btn-primary-ghost-bg-on-hover);
+  text-decoration: underline;
+}
+
+/* .button-secondary {
+  background-color: );
+  color: white;
+}
+
+.button-secondary:hover {
+  background-color: var(--btn-primary-on-hover);
+} */
+
+.button-secondary-ghost {
+}
+
+.button-secondary-ghost:hover {
+}
+
+.button-large {
+  padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+}
+
+.button-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  color: currentColor;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.button-icon-2 {
+  visibility: hidden;
 }
 
 /* $TEXT */
@@ -296,13 +372,6 @@ nav a:active {
   line-height: 1.42857;
 }
 
-/* .title-supplement-container {
-  display: flex;
-  width: fit-content;
-  justify-content: space-between;
-  align-items: center;
-} */
-
 .title-supplement-piece {
   display: inline-block;
   margin-right: 0.3em;
@@ -313,18 +382,6 @@ nav a:active {
 }
 
 /* $UTILITIES */
-.bullet-small {
-  vertical-align: middle;
-  background-color: currentColor;
-  height: 0.2rem;
-  width: 0.2rem;
-  border-radius: 50%;
-}
-
-.color-action {
-  background-color: var(--color-action);
-}
-
 .badge-circle-small {
   height: 16px;
   width: 16px;
@@ -337,4 +394,25 @@ nav a:active {
   line-height: 15px;
   font-size: 1rem;
   display: none;
+}
+
+.bullet-small {
+  vertical-align: middle;
+  background-color: currentColor;
+  height: 0.2rem;
+  width: 0.2rem;
+  border-radius: 50%;
+}
+
+.color-action {
+  background-color: var(--color-action);
+}
+
+/* Used to wrap an svg so that items can be absolutely positioned relative to the svg*/
+.svg-container {
+  position: relative;
+}
+
+.visibility-hidden {
+  visibility: hidden;
 }
