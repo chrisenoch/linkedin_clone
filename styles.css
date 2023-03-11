@@ -26,8 +26,7 @@
   --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
   --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08);
 
-  /* shadows
-  font-sizes */
+  /* font-sizes */
 }
 
 * {
@@ -65,6 +64,8 @@ body {
     Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 }
+
+/* $NAVIGATION */
 
 .logo {
   color: var(--color-primary);
@@ -114,8 +115,6 @@ body {
   z-index: 1;
   display: flex;
   align-items: center;
-
-  /* transform: translate(-50%, -50%); */
 }
 
 .nav {
@@ -214,6 +213,64 @@ nav a:active {
   border: 5px solid var(--color-action);
 }
 
+/* $HERO */
+.hero {
+  border: solid 1px var(--color-faint);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.hero-image-container {
+  /* overflow: hidden; */
+  /* background-color: var(--bg-main); */
+
+  height: 400px;
+}
+
+.hero-image {
+  /* max-height: 13.5rem; */
+  /* overflow: hidden; */
+}
+
+/* $LAYOUT */
+
+.page-container {
+  height: 100%;
+  width: 113rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-container {
+  height: 100vh;
+  width: 80.4rem;
+  margin-right: 2.5rem;
+  margin-top: 2.5rem;
+}
+.side-container {
+  background-color: lightgoldenrodyellow;
+  height: 100vh;
+  margin-top: 2.5rem;
+  flex: 1 1 30rem; /* This column should never shrink so override default. */
+}
+
+.display-block {
+  display: block !important;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* $UTILITIES */
+
+.color-action {
+  background-color: var(--color-action);
+}
+
 .badge-circle-small {
   height: 16px;
   width: 16px;
@@ -226,16 +283,4 @@ nav a:active {
   line-height: 15px;
   font-size: 1rem;
   display: none;
-}
-
-.color-action {
-  background-color: var(--color-action);
-}
-
-.display-block {
-  display: block;
-}
-.flex {
-  display: flex;
-  justify-content: center;
 }
