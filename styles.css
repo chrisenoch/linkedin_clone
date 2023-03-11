@@ -219,17 +219,20 @@ nav a:active {
   border-radius: 0.8rem;
   overflow: hidden;
   background-color: white;
+  height: 400px; /* delete this*/
 }
 
 .hero-image-container {
-  /* overflow: hidden; */
-  /* background-color: var(--bg-main); */
+  margin-bottom: 6.8rem;
+}
 
-  height: 400px;
+.hero-text-container {
+  padding: 0rem 2.5rem;
 }
 
 .hero-image {
-  /* max-height: 13.5rem; */
+  max-height: 13.5rem;
+  width: 100%;
   /* overflow: hidden; */
 }
 
@@ -248,7 +251,7 @@ nav a:active {
   height: 100vh;
   width: 80.4rem;
   margin-right: 2.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 .side-container {
   background-color: lightgoldenrodyellow;
@@ -265,7 +268,43 @@ nav a:active {
   justify-content: center;
 }
 
+/* $TEXT */
+.h1 {
+  font-size: 2.4rem;
+  line-height: 1.4rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+.title-supplement {
+  font-size: 1.4rem;
+  color: var(--color-text-light);
+  line-height: 1.42857;
+}
+
+/* .title-supplement-container {
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.title-supplement-piece {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.title-supplement-piece.bullet-small {
+  margin-bottom: 2px;
+}
+
 /* $UTILITIES */
+.bullet-small {
+  vertical-align: middle;
+  background-color: currentColor;
+  height: 0.2rem;
+  width: 0.2rem;
+  border-radius: 50%;
+}
 
 .color-action {
   background-color: var(--color-action);
