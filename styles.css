@@ -288,7 +288,10 @@ nav a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+}
+
+.flex {
+  display: flex;
 }
 
 .flex-top {
