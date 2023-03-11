@@ -45,16 +45,6 @@ html {
   font-size: 62.5%; /*1rem = 10px, 10px/16px = 62.5% */
 }
 
-img,
-audio,
-video {
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
 body {
   min-height: 100vh;
   background-color: var(--bg-main);
@@ -63,6 +53,20 @@ body {
     Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
     Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
 }
 
 /* $NAVIGATION */
@@ -215,7 +219,7 @@ nav a:active {
 
 /* $HERO */
 .hero {
-  border: solid 1px var(--color-faint);
+  box-shadow: var(--color-faint) 0px 0px 0px 1px;
   border-radius: 0.8rem;
   overflow: hidden;
   background-color: white;
@@ -224,6 +228,7 @@ nav a:active {
 
 .hero-image-container {
   margin-bottom: 6.8rem;
+  position: relative;
 }
 
 .hero-text-container {
@@ -231,9 +236,18 @@ nav a:active {
 }
 
 .hero-image {
-  max-height: 13.5rem;
+  max-height: 135px;
   width: 100%;
   /* overflow: hidden; */
+}
+
+.hero-image-secondary {
+  width: 112px;
+  height: 112px;
+  border: 2px solid white;
+  position: absolute;
+  top: 7.5rem;
+  left: 2.5rem;
 }
 
 /* $LAYOUT */
@@ -271,9 +285,10 @@ nav a:active {
 /* $TEXT */
 .h1 {
   font-size: 2.4rem;
-  line-height: 1.4rem;
+  line-height: 1.33333;
   color: var(--color-text);
   font-weight: 600;
+  /* margin: 0; */
 }
 .title-supplement {
   font-size: 1.4rem;
