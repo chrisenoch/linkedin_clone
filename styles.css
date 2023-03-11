@@ -222,7 +222,7 @@ nav a:active {
   border-radius: 0.8rem;
   overflow: hidden;
   background-color: white;
-  height: 400px; /* delete this*/
+  height: 800px; /* delete this*/
 }
 
 .hero-image-container {
@@ -242,6 +242,10 @@ nav a:active {
   max-height: 135px;
   width: 100%;
   /* overflow: hidden; */
+}
+
+.hero-buttons-container {
+  margin-bottom: 10px;
 }
 
 .hero-image-secondary {
@@ -284,6 +288,7 @@ nav a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .flex-top {
@@ -355,8 +360,29 @@ nav a:active {
   height: 1.6rem;
   width: 1.6rem;
   color: currentColor;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   margin-right: 4px;
+  align-self: center;
+}
+
+.test {
+  height: 2.6rem;
+  width: 1.6rem;
+  color: currentColor;
+  /* vertical-align: middle; */
+  margin-right: 4px;
+  align-self: center;
+  background-color: pink;
+}
+
+.test2 {
+  display: inline-block;
+}
+
+.test3 {
+  height: 100%;
+  background-color: lightgreen;
+  display: inline-block;
 }
 
 .button-icon-2 {
