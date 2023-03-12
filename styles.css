@@ -1,5 +1,6 @@
 :root {
   --bg-main: rgb(243, 242, 239);
+  --container-bg-tint: rgb(249, 250, 251);
 
   --color-primary: rgb(10, 102, 194);
   --color-action: rgb(203, 16, 23);
@@ -13,6 +14,7 @@
   --input-background: rgb(238 243 248);
 
   --nav-text: rgba(0, 0, 0, 0.6);
+  --nav-text-dark: rgba(0, 0, 0, 0.9);
   --nav-active: rgb(25, 25, 25);
 
   --btn-primary: rgb(10, 102, 194);
@@ -26,8 +28,7 @@
   --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
   --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08);
 
-  /* shadows
-  font-sizes */
+  /* font-sizes */
 }
 
 * {
@@ -46,16 +47,6 @@ html {
   font-size: 62.5%; /*1rem = 10px, 10px/16px = 62.5% */
 }
 
-img,
-audio,
-video {
-  max-width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
 body {
   min-height: 100vh;
   background-color: var(--bg-main);
@@ -65,6 +56,26 @@ body {
     Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 }
+
+h1 {
+  margin: 0; /* overrides style in normalize.css */
+}
+
+li {
+  list-style: none;
+}
+
+img,
+audio,
+video {
+  max-width: 100%;
+}
+
+svg {
+  display: block; /* removes default whitespace from below SVGs */
+}
+
+/* $NAVIGATION */
 
 .logo {
   color: var(--color-primary);
@@ -114,8 +125,6 @@ body {
   z-index: 1;
   display: flex;
   align-items: center;
-
-  /* transform: translate(-50%, -50%); */
 }
 
 .nav {
@@ -129,20 +138,20 @@ body {
   overflow: hidden; /* border-bottom: 1px solid var(--color-faint); */
 }
 
-nav a {
+.nav a {
   text-decoration: none;
 }
 
-nav a:link,
-nav a:visited {
+.nav a:link,
+.nav a:visited {
   color: var(--nav-text);
 }
 
-nav a:hover {
+.nav a:hover {
   color: var(--nav-active);
 }
 
-nav a:active {
+.nav a:active {
   color: var(--nav-active);
 }
 
@@ -189,14 +198,9 @@ nav a:active {
   width: 8rem;
 }
 
-.svg-container {
-  position: relative;
-}
-
-.nav svg {
+/* .nav svg {
   display: block;
-  position: relative;
-}
+} */
 
 .home-container::after {
   content: "";
@@ -214,6 +218,222 @@ nav a:active {
   border: 5px solid var(--color-action);
 }
 
+/* $HERO */
+.hero {
+  box-shadow: var(--color-faint) 0px 0px 0px 1px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.hero-image-container {
+  margin-bottom: 5.8rem;
+  position: relative;
+}
+
+.hero-main-container {
+  /* padding: 0rem 2.5rem; */
+}
+
+.hero-title-container {
+  padding: 0rem 2.5rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-image {
+  max-height: 135px;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.hero-buttons-container {
+  padding: 0rem 2.5rem;
+  margin-bottom: 1.6rem;
+}
+.hero-buttons-container-wrapper {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.hero-buttons-container .button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.hero-subnav-container {
+  /* padding: 0rem 2.5rem; */
+}
+
+.hero-image-secondary {
+  width: 112px;
+  height: 112px;
+  border: 2px solid white;
+  position: absolute;
+  top: 7.5rem;
+  left: 2.5rem;
+}
+
+.subnav {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.subnav a {
+  text-decoration: none;
+}
+
+.subnav-item {
+  padding: 1.2rem 1.6rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#subnav-item-active {
+  color: var(--color-attention);
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-attention);
+}
+
+.subnav-item:link,
+.subnav-item:visited {
+  color: var(--nav-text);
+}
+
+.subnav-item:hover {
+  color: var(--nav-text-dark);
+}
+
+.subnav-item:active {
+  color: var(--nav-text-dark);
+  background-color: var(--container-bg-tint);
+}
+
+/* $LAYOUT */
+
+.page-container {
+  height: 100%;
+  width: 113rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-container {
+  height: 100vh;
+  width: 80.4rem;
+  margin-right: 2.5rem;
+  margin-top: 2rem;
+}
+.side-container {
+  background-color: lightgoldenrodyellow;
+  height: 100vh;
+  margin-top: 2.5rem;
+  flex: 1 1 30rem; /* This column should never shrink so override default. */
+}
+
+.display-block {
+  display: block !important;
+}
+.flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* BUTTONS */
+.button {
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1.6rem;
+  height: 3.2rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+.button-primary {
+  background-color: var(--btn-primary);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: var(--btn-primary-on-hover);
+}
+
+.button-primary-ghost {
+  background-color: white;
+  color: var(--btn-primary-ghost);
+  border: 1px solid var(--btn-primary-ghost);
+}
+.button-primary-ghost:hover {
+  background-color: var(--btn-primary-ghost-bg-on-hover);
+  text-decoration: underline;
+}
+
+/* .button-secondary {
+  background-color: );
+  color: white;
+}
+
+.button-secondary:hover {
+  background-color: var(--btn-primary-on-hover);
+} */
+
+.button-secondary-ghost {
+  background-color: white;
+  color: var(--btn-secondary-ghost);
+  border: 1px solid var(--btn-secondary-ghost-border);
+}
+
+.button-secondary-ghost:hover {
+  background-color: var(--btn-secondary-ghost-bg-on-hover);
+  box-shadow: inset 0 0 0 1px var(--color-text-light);
+}
+
+.button-large {
+  padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+}
+
+.button-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  color: currentColor;
+  margin-right: 4px;
+  align-self: center;
+}
+
+/* $TEXT */
+.h1 {
+  font-size: 2.4rem;
+  line-height: 1.33333;
+  color: var(--color-text);
+  font-weight: 600;
+}
+.title-supplement {
+  font-size: 1.4rem;
+  color: var(--color-text-light);
+  line-height: 1.42857;
+}
+
+.title-supplement-piece {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.title-supplement-piece.bullet-small {
+  margin-bottom: 2px;
+}
+
+/* $UTILITIES */
 .badge-circle-small {
   height: 16px;
   width: 16px;
@@ -228,14 +448,23 @@ nav a:active {
   display: none;
 }
 
+.bullet-small {
+  vertical-align: middle;
+  background-color: currentColor;
+  height: 0.2rem;
+  width: 0.2rem;
+  border-radius: 50%;
+}
+
 .color-action {
   background-color: var(--color-action);
 }
 
-.display-block {
-  display: block;
+/* Used to wrap an svg so that items can be absolutely positioned relative to the svg*/
+.svg-container {
+  position: relative;
 }
-.flex {
-  display: flex;
-  justify-content: center;
+
+.visibility-hidden {
+  visibility: hidden;
 }
