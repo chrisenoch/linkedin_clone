@@ -307,8 +307,8 @@ nav a:active {
   font-family: inherit;
   font-size: 1.6rem;
   line-height: 2rem;
-  /* border-radius: 1.6rem; */
-  /* padding: 0.6rem 1.6rem; */
+  border-radius: 1.6rem;
+  padding: 0.6rem 1.6rem;
   height: 3.2rem;
   cursor: pointer;
   border: none;
@@ -356,7 +356,7 @@ nav a:active {
 }
 
 .button-large {
-  /* padding: 0.6rem 3.5rem 0.6rem 3.5rem; */
+  padding: 0.6rem 3.5rem 0.6rem 3.5rem;
 }
 
 .button-icon {
