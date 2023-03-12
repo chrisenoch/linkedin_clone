@@ -56,7 +56,7 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin: 0; /* overrides style in normalize.css */
 }
 
 li {
@@ -70,7 +70,7 @@ video {
 }
 
 svg {
-  display: block;
+  display: block; /* removes default whitespace from below SVGs */
 }
 
 /* $NAVIGATION */
@@ -248,6 +248,10 @@ nav a:active {
   margin-bottom: 10px;
 }
 
+.hero-buttons-container .button:not(:last-child) {
+  margin-right: 1rem;
+}
+
 .hero-image-secondary {
   width: 112px;
   height: 112px;
@@ -341,9 +345,14 @@ nav a:active {
 } */
 
 .button-secondary-ghost {
+  background-color: white;
+  color: var(--btn-secondary-ghost);
+  border: 1px solid var(--btn-secondary-ghost-border);
 }
 
 .button-secondary-ghost:hover {
+  background-color: var(--btn-secondary-ghost-bg-on-hover);
+  box-shadow: inset 0 0 0 1px var(--color-text-light);
 }
 
 .button-large {
@@ -364,7 +373,6 @@ nav a:active {
   line-height: 1.33333;
   color: var(--color-text);
   font-weight: 600;
-  /* margin: 0; */
 }
 .title-supplement {
   font-size: 1.4rem;
