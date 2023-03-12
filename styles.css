@@ -1,5 +1,6 @@
 :root {
   --bg-main: rgb(243, 242, 239);
+  --container-bg-tint: rgb(249, 250, 251);
 
   --color-primary: rgb(10, 102, 194);
   --color-action: rgb(203, 16, 23);
@@ -13,6 +14,7 @@
   --input-background: rgb(238 243 248);
 
   --nav-text: rgba(0, 0, 0, 0.6);
+  --nav-text-dark: rgba(0, 0, 0, 0.9);
   --nav-active: rgb(25, 25, 25);
 
   --btn-primary: rgb(10, 102, 194);
@@ -136,20 +138,20 @@ svg {
   overflow: hidden; /* border-bottom: 1px solid var(--color-faint); */
 }
 
-nav a {
+.nav a {
   text-decoration: none;
 }
 
-nav a:link,
-nav a:visited {
+.nav a:link,
+.nav a:visited {
   color: var(--nav-text);
 }
 
-nav a:hover {
+.nav a:hover {
   color: var(--nav-active);
 }
 
-nav a:active {
+.nav a:active {
   color: var(--nav-active);
 }
 
@@ -222,7 +224,6 @@ nav a:active {
   border-radius: 0.8rem;
   overflow: hidden;
   background-color: white;
-  height: 800px; /* delete this*/
 }
 
 .hero-image-container {
@@ -258,8 +259,7 @@ nav a:active {
 }
 
 .hero-subnav-container {
-  padding: 0rem 2.5rem;
-  margin-bottom: 1.6rem;
+  /* padding: 0rem 2.5rem; */
 }
 
 .hero-image-secondary {
@@ -273,20 +273,36 @@ nav a:active {
 
 .subnav {
   font-size: 1.6rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
-.subnav-item {
-  width: 4.8rem;
-  display: inline-block;
+.subnav a {
+  text-decoration: none;
 }
 
-.subnav-item-active {
+.subnav-item {
+  padding: 1.2rem 1.6rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#subnav-item-active {
   color: var(--color-attention);
   font-weight: 700;
-  border-bottom: 1px solid var(--color-attention);
+  border-bottom: 2px solid var(--color-attention);
+}
+
+.subnav-item:link,
+.subnav-item:visited {
+  color: var(--nav-text);
 }
 
 .subnav-item:hover {
+  color: var(--nav-text-dark);
+}
+
+.subnav-item:active {
+  color: var(--nav-text-dark);
+  background-color: var(--container-bg-tint);
 }
 
 /* $LAYOUT */
