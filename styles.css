@@ -301,8 +301,6 @@ nav a:active {
 
 /* BUTTONS */
 .button {
-  text-align: center;
-  /* display: inline-block; */
   font-weight: 600;
   font-family: inherit;
   font-size: 1.6rem;
@@ -313,13 +311,6 @@ nav a:active {
   cursor: pointer;
   border: none;
   text-decoration: none;
-  /* --btn-primary-ghost: rgb(10, 102, 194);
-  --btn-primary-ghost-border: rgb(10, 102, 194);
-  --btn-primary-ghost-bg-on-hover: #e2f0fe;
-
-  --btn-secondary-ghost: rgba(0, 0, 0, 0.6);
-  --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
-  --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08); */
 }
 .button-primary {
   background-color: var(--btn-primary);
@@ -363,23 +354,8 @@ nav a:active {
   height: 1.6rem;
   width: 1.6rem;
   color: currentColor;
-  /* vertical-align: middle; */
   margin-right: 4px;
   align-self: center;
-}
-
-.test {
-  height: 2.6rem;
-  width: 1.6rem;
-  color: currentColor;
-  /* vertical-align: middle; */
-  margin-right: 4px;
-  align-self: center;
-  background-color: pink;
-}
-
-.test2 {
-  display: inline-block;
 }
 
 /* $TEXT */
