@@ -231,10 +231,11 @@ nav a:active {
 }
 
 .hero-main-container {
-  padding: 0rem 2.5rem;
+  /* padding: 0rem 2.5rem; */
 }
 
 .hero-title-container {
+  padding: 0rem 2.5rem;
   margin-bottom: 3.2rem;
 }
 
@@ -245,7 +246,11 @@ nav a:active {
 }
 
 .hero-buttons-container {
-  margin-bottom: 10px;
+  padding: 0rem 2.5rem;
+  margin-bottom: 1.6rem;
+}
+.hero-buttons-container-wrapper {
+  border-bottom: 1px solid var(--color-faint);
 }
 
 .hero-buttons-container .button:not(:last-child) {
