@@ -382,16 +382,6 @@ nav a:active {
   display: inline-block;
 }
 
-.test3 {
-  height: 100%;
-  background-color: lightgreen;
-  display: inline-block;
-}
-
-.button-icon-2 {
-  visibility: hidden;
-}
-
 /* $TEXT */
 .h1 {
   font-size: 2.4rem;
