@@ -301,25 +301,18 @@ nav a:active {
 
 /* BUTTONS */
 .button {
-  text-align: center;
+  /* text-align: center; */
   /* display: inline-block; */
   font-weight: 600;
   font-family: inherit;
   font-size: 1.6rem;
   line-height: 2rem;
-  border-radius: 1.6rem;
-  padding: 0.6rem 1.6rem;
+  /* border-radius: 1.6rem; */
+  /* padding: 0.6rem 1.6rem; */
   height: 3.2rem;
   cursor: pointer;
   border: none;
   text-decoration: none;
-  /* --btn-primary-ghost: rgb(10, 102, 194);
-  --btn-primary-ghost-border: rgb(10, 102, 194);
-  --btn-primary-ghost-bg-on-hover: #e2f0fe;
-
-  --btn-secondary-ghost: rgba(0, 0, 0, 0.6);
-  --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
-  --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08); */
 }
 .button-primary {
   background-color: var(--btn-primary);
@@ -340,6 +333,13 @@ nav a:active {
   text-decoration: underline;
 }
 
+.test {
+  /* padding: 20px; */
+  height: 32px;
+  width: 150px;
+  background-color: pink;
+}
+
 /* .button-secondary {
   background-color: );
   color: white;
@@ -356,7 +356,7 @@ nav a:active {
 }
 
 .button-large {
-  padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+  /* padding: 0.6rem 3.5rem 0.6rem 3.5rem; */
 }
 
 .button-icon {
@@ -365,21 +365,6 @@ nav a:active {
   color: currentColor;
   /* vertical-align: middle; */
   margin-right: 4px;
-  align-self: center;
-}
-
-.test {
-  height: 2.6rem;
-  width: 1.6rem;
-  color: currentColor;
-  /* vertical-align: middle; */
-  margin-right: 4px;
-  align-self: center;
-  background-color: pink;
-}
-
-.test2 {
-  display: inline-block;
 }
 
 /* $TEXT */
