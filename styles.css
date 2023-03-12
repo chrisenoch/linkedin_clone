@@ -257,6 +257,11 @@ nav a:active {
   margin-right: 1rem;
 }
 
+.hero-subnav-container {
+  padding: 0rem 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
 .hero-image-secondary {
   width: 112px;
   height: 112px;
@@ -264,6 +269,24 @@ nav a:active {
   position: absolute;
   top: 7.5rem;
   left: 2.5rem;
+}
+
+.subnav {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+}
+.subnav-item {
+  width: 4.8rem;
+  display: inline-block;
+}
+
+.subnav-item-active {
+  color: var(--color-attention);
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-attention);
+}
+
+.subnav-item:hover {
 }
 
 /* $LAYOUT */
