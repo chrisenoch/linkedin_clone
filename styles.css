@@ -283,6 +283,10 @@ svg {
   margin-right: 1rem;
 }
 
+.hero-buttons-container .button-primary-ghost:hover {
+  text-decoration: underline;
+}
+
 .hero-image-secondary {
   width: 112px;
   height: 112px;
@@ -325,6 +329,55 @@ svg {
   font-size: 1.6rem;
   padding: 1.2rem 0;
   display: inline-block;
+}
+
+/*NEWSLETTER*/
+.newsletter-container {
+  padding: 2.4rem;
+}
+.newsletter-title {
+  padding-bottom: 1.6rem;
+}
+
+/* .newsletter-content {
+} */
+
+.newsletter-right {
+}
+
+.newsletter-left {
+  flex: 0 0 auto;
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.newsletter-image-container {
+  width: 270px;
+  height: 156px;
+  overflow: hidden;
+}
+
+.newsletter-image-blurred {
+  height: 105%;
+  width: 105%;
+  filter: blur(20px);
+  opacity: 0.6;
+}
+
+.newsletter-image {
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.newsletter-description {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: var(--color-text);
 }
 
 /* $LAYOUT */
@@ -379,6 +432,10 @@ svg {
 
 /* BUTTONS */
 .button {
+  display: flex; /* facilitates alignment of icons with text inside buttons  */
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
   font-weight: 600;
   font-family: inherit;
   font-size: 1.6rem;
@@ -406,7 +463,7 @@ svg {
 }
 .button-primary-ghost:hover {
   background-color: var(--btn-primary-ghost-bg-on-hover);
-  text-decoration: underline;
+  box-shadow: inset 0 0 0 1px var(--btn-primary-ghost);
 }
 
 /* .button-secondary {
@@ -458,10 +515,19 @@ svg {
   font-weight: 600;
 }
 
+.h3 {
+  /*About rgba (0,0,0,0.9) , font-size:2rem, line-height 1.4, font-weight:600*/
+  color: var(--color-text);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
 .title-supplement {
   font-size: 1.4rem;
   color: var(--color-text-light);
   line-height: 1.42857;
+  font-weight: 400;
 }
 
 .title-supplement-piece {
@@ -507,4 +573,190 @@ svg {
 
 .visibility-hidden {
   visibility: hidden;
+}
+
+/*MARGINS AND PADDING */
+.mt1 {
+  margin-top: 0.4rem !important;
+}
+
+.mb1 {
+  margin-bottom: 0.4rem !important;
+}
+
+.ml1 {
+  margin-left: 0.4rem !important;
+}
+
+.mr1 {
+  margin-right: 0.4rem !important;
+}
+.mt2 {
+  margin-top: 0.8rem !important;
+}
+
+.mb2 {
+  margin-bottom: 0.8rem !important;
+}
+
+.ml2 {
+  margin-left: 0.8rem !important;
+}
+
+.mr2 {
+  margin-right: 0.8rem !important;
+}
+
+.mt3 {
+  margin-top: 1.2rem !important;
+}
+
+.mb3 {
+  margin-bottom: 1.2rem !important;
+}
+
+.ml3 {
+  margin-left: 1.2rem !important;
+}
+
+.mr3 {
+  margin-right: 1.2rem !important;
+}
+
+.mt4 {
+  margin-top: 1.6rem !important;
+}
+
+.mb4 {
+  margin-bottom: 1.6rem !important;
+}
+
+.ml4 {
+  margin-left: 1.6rem !important;
+}
+
+.mr4 {
+  margin-right: 1.6rem !important;
+}
+
+.mt5 {
+  margin-top: 2.4rem !important;
+}
+
+.mb5 {
+  margin-bottom: 2.4rem !important;
+}
+
+.ml5 {
+  margin-left: 2.4rem !important;
+}
+
+.mr5 {
+  margin-right: 2.4rem !important;
+}
+.mt6 {
+  margin-top: 3.2rem !important;
+}
+
+.mb6 {
+  margin-bottom: 3.2rem !important;
+}
+
+.ml6 {
+  margin-left: 3.2rem !important;
+}
+
+.mr6 {
+  margin-right: 3.2rem !important;
+}
+
+.pt1 {
+  padding-top: 0.4rem !important;
+}
+
+.pb1 {
+  padding-bottom: 0.4rem !important;
+}
+
+.pl1 {
+  padding-left: 0.4rem !important;
+}
+
+.pr1 {
+  padding-right: 0.4rem !important;
+}
+
+.pt2 {
+  padding-top: 0.8rem !important;
+}
+
+.pb2 {
+  padding-bottom: 0.8rem !important;
+}
+
+.pl2 {
+  padding-left: 0.8rem !important;
+}
+
+.pr2 {
+  padding-right: 0.8rem !important;
+}
+
+.pt3 {
+  padding-top: 1.2rem !important;
+}
+
+.pb3 {
+  padding-bottom: 1.2rem !important;
+}
+
+.pl3 {
+  padding-left: 1.2rem !important;
+}
+
+.pr3 {
+  padding-right: 1.2rem !important;
+}
+
+.pt4 {
+  padding-top: 1.6rem !important;
+}
+
+.pb4 {
+  padding-bottom: 1.6rem !important;
+}
+
+.pl4 {
+  padding-left: 1.6rem !important;
+}
+
+.pr4 {
+  padding-right: 1.6rem !important;
+}
+.pt5 {
+  padding-top: 2.4rem !important;
+}
+
+.pb5 {
+  padding-bottom: 2.4rem !important;
+}
+
+.pl5 {
+  padding-left: 2.4rem !important;
+}
+
+.pt6 {
+  padding-top: 3.2rem !important;
+}
+
+.pb6 {
+  padding-bottom: 3.2rem !important;
+}
+
+.pl6 {
+  padding-left: 3.2rem !important;
+}
+
+.pr6 {
+  padding-right: 3.2rem !important;
 }
