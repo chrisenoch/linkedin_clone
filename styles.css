@@ -348,16 +348,29 @@ svg {
 .newsletter-left {
   flex: 0 0 auto;
   margin-right: 1.5rem;
+  position: relative;
+}
+
+.newsletter-image-container {
+  width: 270px;
+  height: 156px;
+  overflow: hidden;
+}
+
+.newsletter-image-blurred {
+  height: 105%;
+  width: 105%;
+  filter: blur(20px);
+  opacity: 0.6;
 }
 
 .newsletter-image {
-  width: 270px;
-  height: 156px;
-  filter: blur(20px);
-  opacity: 0.6;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .newsletter-description {
@@ -419,7 +432,9 @@ svg {
 
 /* BUTTONS */
 .button {
-  display: flex;
+  display: flex; /* facilitates alignment of icons with text inside buttons  */
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   font-weight: 600;
   font-family: inherit;
