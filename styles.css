@@ -65,6 +65,11 @@ li {
   list-style: none;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 img,
 audio,
 video {
@@ -332,6 +337,7 @@ svg {
 }
 
 /*NEWSLETTER*/
+
 .newsletter-container {
   padding: 2.4rem;
 }
@@ -378,6 +384,84 @@ svg {
   line-height: 2rem;
   font-weight: 400;
   color: var(--color-text);
+}
+
+/*RECENTLY POSTED VIDEOS*/
+.recently-posted-videos-container-top {
+  padding: 2.4rem;
+}
+
+.recently-posted-videos-container-top-wrapper {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.recently-posted-videos-container-bottom {
+  text-align: center;
+}
+.recently-posted-videos-container {
+  padding: 2.4rem;
+}
+.recently-posted-videos-title {
+  padding-bottom: 1.6rem;
+}
+
+.recently-posted-videos-right {
+}
+
+.recently-posted-videos-left {
+  flex: 0 0 auto;
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.recently-posted-videos-image-container {
+  width: 270px;
+  height: 156px;
+  overflow: hidden;
+}
+
+.recently-posted-videos-image {
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.recently-posted-videos-description {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.recently-posted-videos-cta {
+  color: var(--color-text-light);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1.2rem 0;
+  display: inline-block;
+}
+
+.recently-posted-videos-description a {
+  text-decoration: none;
+}
+
+.recently-posted-videos-description a:link,
+.recently-posted-videos-description a:visited {
+  color: var(--nav-text);
+}
+
+.recently-posted-videos-description a:hover {
+  color: var(--nav-text-dark);
+  text-decoration: underline;
+}
+
+.recently-posted-videos-description a:active {
+  color: var(--nav-text-dark);
+  background-color: var(--container-bg-tint);
 }
 
 /* $LAYOUT */
@@ -539,7 +623,34 @@ svg {
   margin-bottom: 2px;
 }
 
+/* ICONS AND SVGS */
+.video-play-button-foreground {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-play-button-background {
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* $UTILITIES */
+.absolute-centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .badge-circle-small {
   height: 16px;
   width: 16px;
