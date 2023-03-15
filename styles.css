@@ -28,6 +28,8 @@
   --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
   --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08);
 
+  --btn-secondary: rgba(0, 0, 0, 0.6);
+
   --btn-text-disabled: rgba(0, 0, 0, 0.3);
   --btn-bg-disabled: rgba(0, 0, 0, 0.08);
 
@@ -283,6 +285,10 @@ svg {
   padding: 0rem 2.5rem;
   margin-bottom: 1.6rem;
 }
+
+.hero-buttons-container > .button-primary {
+  padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+}
 .hero-buttons-container-wrapper {
   border-bottom: 1px solid var(--color-faint);
 }
@@ -518,9 +524,9 @@ svg {
   font-weight: 400;
   color: var(--color-text);
   margin-right: auto;
+  padding-left: 0.8rem;
 }
-.page-posts-card-post-details {
-}
+
 .page-posts-card-ellipsis {
   margin-top: -4px;
 }
@@ -534,15 +540,19 @@ svg {
 .page-posts-width-wrapper {
   width: 365px;
 }
-.page-posts-card-header {
-}
 
-.page-posts-card-supplement-container {
+.page-posts-card-page-stats {
   display: flex;
   align-items: center;
 }
 
-.page-posts-card-supplement-container img {
+.page-posts-card-post-stats {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.page-posts-card-post-stats img {
   display: block; /* removes space from bottom of images and makes alignment easier */
 }
 
@@ -586,6 +596,27 @@ svg {
   height: 263px;
   object-fit: cover;
   object-position: center;
+}
+
+.page-posts-card-social-actions-container {
+  /* padding: 0.8rem 0.8rem 0.8rem 1.6rem; */
+}
+
+.page-posts-card-social-action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+}
+
+.page-posts-card-social-actions-container button {
+  width: 67.27px;
+  height: 72px;
+}
+
+.page-posts-card-social-action-container svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* $LAYOUT */
@@ -655,7 +686,7 @@ svg {
   font-weight: 600;
   font-family: inherit;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2;
   border-radius: 1.6rem;
   padding: 0.6rem 1.6rem;
 
@@ -675,6 +706,10 @@ svg {
   border-radius: 50%;
   width: 3.2rem;
   height: 3.2rem;
+}
+
+.button-square {
+  border-radius: 0px;
 }
 
 .button-primary {
@@ -699,7 +734,7 @@ svg {
 
 .button-secondary-icon {
   background-color: transparent;
-  color: var(--color-text);
+  color: var(--btn-secondary);
   border: none;
 }
 
@@ -719,8 +754,12 @@ svg {
   box-shadow: inset 0 0 0 1px var(--color-text-light);
 }
 
-.button-large {
+/* .button-large {
   padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+} */
+
+.button-small {
+  font-size: 1.4rem;
 }
 
 .button-icon {
