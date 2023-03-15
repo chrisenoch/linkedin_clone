@@ -505,7 +505,7 @@ svg {
   display: inline-block;
 }
 
-.page-posts-card-container {
+.page-posts-card-header {
   display: flex;
   /* padding: 0.8rem 40rem 0rem 1.6rem; */
   padding: 0.8rem 0.8rem 0rem 1.6rem;
@@ -768,18 +768,24 @@ svg {
   font-weight: 600;
 }
 
-.supplement-small {
+.supplement-small,
+.supplement-small-with-overlap-left {
   font-size: 1.2rem;
   line-height: 1.33333;
 }
 
-.supplement-overlap-left {
+.supplement-small-with-overlap-left {
   margin-left: -6px;
 }
 
-.title-supplement-piece.bullet-small {
+/*Can be used for overlapping circular icons for example  */
+/* .supplement-small-overlap-left {
+  margin-left: -6px;
+} */
+
+/* .title-supplement-piece.bullet-small {
   margin-bottom: 2px;
-}
+} */
 
 /* ICONS AND SVGS */
 .video-play-button-foreground {
