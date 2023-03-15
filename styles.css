@@ -458,12 +458,12 @@ svg {
 }
 
 .recently-posted-videos-description a:hover {
-  color: var(--nav-text-dark);
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .recently-posted-videos-description a:active {
-  color: var(--nav-text-dark);
+  color: var(--color-primary);
   background-color: var(--container-bg-tint);
 }
 
@@ -555,9 +555,10 @@ svg {
   height: 40px;
 }
 
-.page-posts-card-supplement {
+/* Using this to wrap the secton-container, means we don't need to set a width on the "section-container" class, which leaves it more flexible for reuse in other parts of the application. */
+.page-posts-width-wrapper {
+  width: 365px;
 }
-
 .page-posts-card-header {
 }
 
@@ -571,6 +572,14 @@ svg {
   align-items: center;
 }
 
+.page-posts-card-description {
+  padding: 0.8rem 0.8rem 0rem 1.6rem;
+  font-size: 1.4rem;
+  color: var(--color-text);
+  line-height: 2rem;
+  font-weight: 400;
+}
+
 .page-posts-card-description a {
   text-decoration: none;
 }
@@ -581,12 +590,12 @@ svg {
 }
 
 .page-posts-card-description a:hover {
-  color: var(--nav-text-dark);
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .page-posts-card-description a:active {
-  color: var(--nav-text-dark);
+  color: var(--color-primary);
   background-color: var(--container-bg-tint);
 }
 
@@ -633,6 +642,13 @@ svg {
 
 .flex {
   display: flex;
+}
+
+.flex-0 {
+  flex: 0 0 0;
+}
+.flex-0-auto {
+  flex: 0 0 auto;
 }
 
 .flex-top {
