@@ -537,14 +537,13 @@ svg {
 .page-posts-card-header {
 }
 
-.page-posts-card-supplement-piece {
-  display: inline-block;
-  margin-right: 0.3em;
-}
-
 .page-posts-card-supplement-container {
   display: flex;
   align-items: center;
+}
+
+.page-posts-card-supplement-container img {
+  display: block; /* removes space from bottom of images and makes alignment easier */
 }
 
 .page-posts-card-description {
@@ -773,10 +772,10 @@ svg {
   font-size: 1.2rem;
   line-height: 1.33333;
 }
-/* .title-supplement-piece {
-  display: inline-block;
-  margin-right: 0.3em;
-} */
+
+.supplement-overlap-left {
+  margin-left: -6px;
+}
 
 .title-supplement-piece.bullet-small {
   margin-bottom: 2px;
