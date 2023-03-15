@@ -412,7 +412,6 @@ svg {
 }
 
 .recently-posted-videos-left {
-  flex: 0 0 auto;
   margin-right: 1.5rem;
   position: relative;
 }
@@ -423,14 +422,19 @@ svg {
   overflow: hidden;
 }
 
-.recently-posted-videos-image {
+.recently-posted-videos-image-container img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .recently-posted-videos-image {
   height: 88px;
   width: 88px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .recently-posted-videos-description {
   font-size: 1.4rem;
@@ -500,27 +504,6 @@ svg {
 .page-posts-right {
 }
 
-.page-posts-left {
-  flex: 0 0 auto;
-  margin-right: 1.5rem;
-  position: relative;
-}
-
-.page-posts-image-container {
-  width: 270px;
-  height: 156px;
-  overflow: hidden;
-}
-
-.page-posts-image {
-  height: 88px;
-  width: 88px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .page-posts-cta {
   color: var(--color-text-light);
   font-weight: 600;
@@ -573,7 +556,7 @@ svg {
 }
 
 .page-posts-card-description {
-  padding: 0.8rem 0.8rem 0rem 1.6rem;
+  padding: 0.8rem 0.8rem 0.8rem 1.6rem;
   font-size: 1.4rem;
   color: var(--color-text);
   line-height: 2rem;
@@ -597,6 +580,23 @@ svg {
 .page-posts-card-description a:active {
   color: var(--color-primary);
   background-color: var(--container-bg-tint);
+}
+
+.page-posts-card-image-container {
+  width: 270px;
+  height: 156px;
+  width: 365px;
+  height: 263px;
+  overflow: hidden;
+  position: relative;
+  /* background-size: cover; */
+}
+
+.page-posts-card-image-container img {
+  width: 365px;
+  height: 263px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* $LAYOUT */
