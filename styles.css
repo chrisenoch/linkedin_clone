@@ -413,28 +413,20 @@ svg {
 
 .recently-posted-videos-left {
   margin-right: 1.5rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .recently-posted-videos-image-container {
   width: 270px;
   height: 156px;
   overflow: hidden;
+  position: relative;
 }
 
 .recently-posted-videos-image-container img {
   object-fit: cover;
   object-position: center;
 }
-
-/* .recently-posted-videos-image {
-  height: 88px;
-  width: 88px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 .recently-posted-videos-description {
   font-size: 1.4rem;
@@ -583,8 +575,6 @@ svg {
 }
 
 .page-posts-card-image-container {
-  width: 270px;
-  height: 156px;
   width: 365px;
   height: 263px;
   overflow: hidden;
