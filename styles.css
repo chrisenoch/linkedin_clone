@@ -681,6 +681,132 @@ svg {
 .main-advert-details-company-name {
   font-weight: 600;
 }
+/* $AFFILIATED PAGES */
+.affiliated-pages-container {
+  margin: 1.6rem;
+}
+.affiliated-pages-container:not(:last-child) {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.affiliated-pages-title {
+  padding: 1.6rem 0;
+}
+
+.affiliated-pages-advert {
+  display: flex;
+  padding: 1.6rem 0;
+}
+
+.affiliated-pages-advert-image {
+  width: 38px;
+  height: 38px;
+}
+
+.affiliated-pages-details {
+  padding-left: 1.2rem;
+}
+
+.affiliated-pages-advert-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: var(--color-text);
+  padding-bottom: 0.4rem;
+}
+.affiliated-pages-advert-category {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text);
+  padding-bottom: 0.8rem;
+}
+.affiliated-pages-advert-type {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text-light);
+  padding-bottom: 0.4rem;
+}
+
+.affiliated-pages-container button {
+  margin: 0 auto;
+  margin-bottom: 1.6rem;
+}
+
+/* PAGE SUGGESTIONS */
+.page-suggestions-container {
+  margin: 1.6rem;
+}
+.page-suggestions-container:not(:last-child) {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.page-suggestions-container-top-wrapper {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.page-suggestions-container-bottom {
+  text-align: center;
+}
+
+.page-suggestions-title {
+  padding: 1.6rem 0;
+}
+
+.page-suggestions-page {
+  display: flex;
+  padding: 1.6rem 0;
+}
+
+.page-suggestions-page-image {
+  width: 38px;
+  height: 38px;
+}
+
+.page-suggestions-details {
+  padding-left: 1.2rem;
+}
+
+.page-suggestions-page-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: var(--color-text);
+  padding-bottom: 0.4rem;
+}
+.page-suggestions-page-category {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text);
+  padding-bottom: 0.8rem;
+}
+.page-suggestions-page-followers {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text-light);
+  padding-bottom: 0.4rem;
+}
+
+.page-suggestions-container button {
+  margin: 0 auto;
+  margin-bottom: 1.6rem;
+}
+
+.page-suggestions-container:last-child button {
+  margin-bottom: 3.2rem;
+}
+
+.page-suggestions-container-cta {
+  color: var(--color-text-light);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1.2rem 0;
+  display: inline-block;
+}
 
 /* $LAYOUT */
 
@@ -700,8 +826,6 @@ svg {
   margin-bottom: 2.4rem;
 }
 .side-container {
-  background-color: lightgoldenrodyellow;
-  height: 100vh; /* delete this when there is content  */
   margin-top: 2.4rem;
   flex: 1 1 30rem; /* This column should never shrink so override default. */
 }
