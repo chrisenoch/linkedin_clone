@@ -518,9 +518,13 @@ svg {
   display: flex;
 }
 
+/* bullet is nearer to the bottom instead of being exactly in the centre  */
+.page-posts-card-container .bullet-small {
+  margin-top: 3px;
+}
+
 .page-posts-card-header {
   display: flex;
-  /* padding: 0.8rem 40rem 0rem 1.6rem; */
   padding: 0.8rem 0.8rem 0rem 1.6rem;
   width: 365px;
 }
@@ -642,14 +646,14 @@ svg {
 }
 
 .main-container {
-  height: 100vh;
   width: 80.4rem;
   margin-right: 2.5rem;
   margin-top: 2rem;
+  margin-bottom: 2.4rem;
 }
 .side-container {
   background-color: lightgoldenrodyellow;
-  height: 100vh;
+  height: 100vh; /* delete this when there is content  */
   margin-top: 2.5rem;
   flex: 1 1 30rem; /* This column should never shrink so override default. */
 }
@@ -661,6 +665,11 @@ svg {
   background-color: white;
   margin-bottom: 1.6rem;
 }
+
+/* Do not apply to inner sections - only to the last section within main-container*/
+/* .main-container > .section-container:last-child {
+  margin-bottom: 48px;
+} */
 
 .display-block {
   display: block !important;
