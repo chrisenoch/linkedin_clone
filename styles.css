@@ -28,6 +28,11 @@
   --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
   --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08);
 
+  --btn-secondary: rgba(0, 0, 0, 0.6);
+
+  --btn-text-disabled: rgba(0, 0, 0, 0.3);
+  --btn-bg-disabled: rgba(0, 0, 0, 0.08);
+
   /* font-sizes */
 }
 
@@ -280,6 +285,10 @@ svg {
   padding: 0rem 2.5rem;
   margin-bottom: 1.6rem;
 }
+
+.hero-buttons-container > .button-primary {
+  padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+}
 .hero-buttons-container-wrapper {
   border-bottom: 1px solid var(--color-faint);
 }
@@ -364,7 +373,7 @@ svg {
 }
 
 .newsletter-image-blurred {
-  height: 105%;
+  height: 105%; /* Height and width set to more than 100%, along with overflow:hidden in its container, ensure that a sharp border is maintained even though the image is blurred.    */
   width: 105%;
   filter: blur(20px);
   opacity: 0.6;
@@ -409,24 +418,20 @@ svg {
 }
 
 .recently-posted-videos-left {
-  flex: 0 0 auto;
   margin-right: 1.5rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .recently-posted-videos-image-container {
   width: 270px;
   height: 156px;
   overflow: hidden;
+  position: relative;
 }
 
-.recently-posted-videos-image {
-  height: 88px;
-  width: 88px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.recently-posted-videos-image-container img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .recently-posted-videos-description {
@@ -455,13 +460,178 @@ svg {
 }
 
 .recently-posted-videos-description a:hover {
-  color: var(--nav-text-dark);
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .recently-posted-videos-description a:active {
-  color: var(--nav-text-dark);
+  color: var(--color-primary);
   background-color: var(--container-bg-tint);
+}
+
+/*PAGE POSTS */
+
+.page-posts-container-top {
+  padding-top: 1.2rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.page-posts-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.page-posts-container-top-wrapper {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.page-posts-container-bottom {
+  text-align: center;
+}
+.page-posts-container {
+  padding: 2.4rem;
+}
+.page-posts-title {
+  padding: 1.2rem 0.8rem;
+}
+
+.page-posts-right {
+}
+
+.page-posts-cta {
+  color: var(--color-text-light);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1.2rem 0;
+  display: inline-block;
+}
+
+.page-posts-cards-container {
+  display: flex;
+  padding-bottom: 0.8rem;
+}
+.page-posts-card-container {
+  display: flex;
+}
+
+/* bullet is nearer to the bottom instead of being exactly in the centre  */
+.page-posts-card-container .bullet-small {
+  margin-top: 3px;
+}
+
+.page-posts-card-header {
+  display: flex;
+  padding: 0.8rem 0.8rem 0rem 1.6rem;
+  width: 365px;
+}
+
+.page-posts-card-page-details {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin-right: auto;
+  padding-left: 0.8rem;
+}
+
+.page-posts-card-ellipsis {
+  margin-top: -4px;
+}
+
+.page-posts-card-thumbnail {
+  width: 40px;
+  height: 40px;
+}
+
+/* Using this to wrap the secton-container, means we don't need to set a width on the "section-container" class, which leaves it more flexible for reuse in other parts of the application. */
+.page-posts-width-wrapper {
+  width: 365px;
+}
+
+.page-posts-card-page-stats {
+  display: flex;
+  align-items: center;
+}
+
+.page-posts-card-post-stats {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.page-posts-card-post-stats img {
+  display: block; /* removes space from bottom of images and makes alignment easier */
+}
+
+.page-posts-card-description {
+  padding: 0.8rem 0.8rem 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  color: var(--color-text);
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.page-posts-card-description a {
+  text-decoration: none;
+}
+
+.page-posts-card-description a:link,
+.page-posts-card-description a:visited {
+  color: var(--nav-text);
+}
+
+.page-posts-card-description a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.page-posts-card-description a:active {
+  color: var(--color-primary);
+  background-color: var(--container-bg-tint);
+}
+
+.page-posts-card-image-container {
+  width: 365px;
+  height: 263px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* background-size: cover; */
+}
+
+.page-posts-card-image-container img {
+  /* width: 365px; */
+  height: 263px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page-posts-card-social-actions-container {
+  display: flex;
+  padding: 0.4rem 1.2rem;
+  justify-content: space-between;
+}
+
+.page-posts-card-social-action-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+}
+
+.page-posts-card-social-actions-container button {
+  width: 67.27px;
+  height: 72px;
+}
+
+.page-posts-card-social-action-container svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* $LAYOUT */
@@ -476,14 +646,14 @@ svg {
 }
 
 .main-container {
-  height: 100vh;
   width: 80.4rem;
   margin-right: 2.5rem;
   margin-top: 2rem;
+  margin-bottom: 2.4rem;
 }
 .side-container {
   background-color: lightgoldenrodyellow;
-  height: 100vh;
+  height: 100vh; /* delete this when there is content  */
   margin-top: 2.5rem;
   flex: 1 1 30rem; /* This column should never shrink so override default. */
 }
@@ -495,6 +665,11 @@ svg {
   background-color: white;
   margin-bottom: 1.6rem;
 }
+
+/* Do not apply to inner sections - only to the last section within main-container*/
+/* .main-container > .section-container:last-child {
+  margin-bottom: 48px;
+} */
 
 .display-block {
   display: block !important;
@@ -509,6 +684,13 @@ svg {
   display: flex;
 }
 
+.flex-0 {
+  flex: 0 0 0;
+}
+.flex-0-auto {
+  flex: 0 0 auto;
+}
+
 .flex-top {
   display: flex;
   align-items: flex-start;
@@ -519,24 +701,43 @@ svg {
   display: flex; /* facilitates alignment of icons with text inside buttons  */
   justify-content: center;
   align-items: center;
+  height: 3.2rem;
   width: fit-content;
   font-weight: 600;
   font-family: inherit;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2;
   border-radius: 1.6rem;
   padding: 0.6rem 1.6rem;
-  height: 3.2rem;
+
   cursor: pointer;
   border: none;
   text-decoration: none;
 }
+
+.button:disabled {
+  cursor: no-drop;
+  background-color: var(--btn-bg-disabled);
+  color: var(--btn-text-disabled);
+  border: none;
+}
+
+.button-circle {
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.button-square {
+  border-radius: 0px;
+}
+
 .button-primary {
   background-color: var(--btn-primary);
   color: white;
 }
 
-.button-primary:hover {
+.button-primary:hover:not([disabled]) {
   background-color: var(--btn-primary-on-hover);
 }
 
@@ -545,34 +746,40 @@ svg {
   color: var(--btn-primary-ghost);
   border: 1px solid var(--btn-primary-ghost);
 }
-.button-primary-ghost:hover {
+/* Do not use: "button-primary-ghost:hover:enabled"  because the hover state will stop working on links styled as buttons.*/
+.button-primary-ghost:hover:not([disabled]) {
   background-color: var(--btn-primary-ghost-bg-on-hover);
   box-shadow: inset 0 0 0 1px var(--btn-primary-ghost);
 }
 
-/* .button-secondary {
-  background-color: 
-  color: 
+.button-secondary-icon {
+  background-color: transparent;
+  color: var(--btn-secondary);
+  border: none;
 }
 
-.button-secondary:hover {
-  background-color: 
-  color: 
-} */
+.button-secondary-icon:hover:not([disabled]) {
+  background-color: var(--btn-secondary-ghost-bg-on-hover);
+}
 
 .button-secondary-ghost {
-  background-color: white;
+  background-color: transparent;
   color: var(--btn-secondary-ghost);
   border: 1px solid var(--btn-secondary-ghost-border);
 }
 
-.button-secondary-ghost:hover {
+/* Do not use: "button-secondary-ghost:hover:enabled"  because the hover state will stop working on links styled as buttons.*/
+.button-secondary-ghost:hover:not([disabled]) {
   background-color: var(--btn-secondary-ghost-bg-on-hover);
   box-shadow: inset 0 0 0 1px var(--color-text-light);
 }
 
-.button-large {
+/* .button-large {
   padding: 0.6rem 3.5rem 0.6rem 3.5rem;
+} */
+
+.button-small {
+  font-size: 1.4rem;
 }
 
 .button-icon {
@@ -607,21 +814,37 @@ svg {
   font-weight: 600;
 }
 
-.title-supplement {
+.supplement {
   font-size: 1.4rem;
   color: var(--color-text-light);
   line-height: 1.42857;
   font-weight: 400;
-}
-
-.title-supplement-piece {
   display: inline-block;
-  margin-right: 0.3em;
 }
 
-.title-supplement-piece.bullet-small {
-  margin-bottom: 2px;
+.supplement-title {
+  color: var(--color-text);
+  font-weight: 600;
 }
+
+.supplement-small,
+.supplement-small-with-overlap-left {
+  font-size: 1.2rem;
+  line-height: 1.33333;
+}
+
+.supplement-small-with-overlap-left {
+  margin-left: -6px;
+}
+
+/*Can be used for overlapping circular icons for example  */
+/* .supplement-small-overlap-left {
+  margin-left: -6px;
+} */
+
+/* .title-supplement-piece.bullet-small {
+  margin-bottom: 2px;
+} */
 
 /* ICONS AND SVGS */
 .video-play-button-foreground {
