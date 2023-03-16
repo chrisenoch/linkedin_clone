@@ -641,6 +641,7 @@ svg {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1.2rem;
 }
 
 .main-advert-container h2 {
@@ -650,25 +651,35 @@ svg {
   line-height: 1.6rem;
 }
 
-.main-advert-image {
-  width: 70px;
-  height: 70px;
-  display: inline-block;
-  /* background-color: green; */
-  /* object-fit: cover;
-  object-position: center; */
-  /* z-index: 1000; */
+.main-advert-options {
+  display: flex;
+  align-self: flex-end;
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.33333rem;
 }
 
-.test {
-  height: 70px;
-  width: 70px;
-  background-color: yellow;
+.main-advert-image {
+  width: 76px;
+  height: 76px;
+  display: inline-block;
 }
 
 .main-advert-image img {
   display: block;
   display: inline-block;
+}
+
+.main-advert-details {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.main-advert-details-company-name {
+  font-weight: 600;
 }
 
 /* $LAYOUT */
