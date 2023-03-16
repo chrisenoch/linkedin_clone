@@ -486,7 +486,6 @@ svg {
 
 .page-posts-container-top-wrapper {
   border-bottom: 1px solid var(--color-faint);
-  height: 1000px;
 }
 
 .page-posts-container-bottom {
@@ -509,6 +508,14 @@ svg {
   font-size: 1.6rem;
   padding: 1.2rem 0;
   display: inline-block;
+}
+
+.page-posts-cards-container {
+  display: flex;
+  padding-bottom: 0.8rem;
+}
+.page-posts-card-container {
+  display: flex;
 }
 
 .page-posts-card-header {
@@ -588,18 +595,22 @@ svg {
   height: 263px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
   /* background-size: cover; */
 }
 
 .page-posts-card-image-container img {
-  width: 365px;
+  /* width: 365px; */
   height: 263px;
   object-fit: cover;
   object-position: center;
 }
 
 .page-posts-card-social-actions-container {
-  /* padding: 0.8rem 0.8rem 0.8rem 1.6rem; */
+  display: flex;
+  padding: 0.4rem 1.2rem;
+  justify-content: space-between;
 }
 
 .page-posts-card-social-action-container {
