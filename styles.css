@@ -1037,6 +1037,10 @@ svg {
   margin-left: -6px;
 }
 
+.supplement-small-with-overlap-left:last-of-type {
+  margin-right: 0.2rem;
+}
+
 /*Can be used for overlapping circular icons for example  */
 /* .supplement-small-overlap-left {
   margin-left: -6px;
