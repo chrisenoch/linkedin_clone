@@ -73,6 +73,29 @@ li {
 a,
 button {
   cursor: pointer;
+  color: currentColor;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.link-to-underline:hover,
+.link-to-underline:active {
+  text-decoration: underline;
+}
+
+.link-to-primary,
+.link-to-primary:link,
+.link-to-primary:visited {
+  color: currentColor;
+}
+
+.link-to-primary:hover,
+.link-to-primary:active {
+  text-decoration: underline;
+  color: var(--color-primary);
 }
 
 img,
@@ -683,7 +706,7 @@ svg {
 }
 /* $AFFILIATED PAGES */
 .affiliated-pages-container {
-  margin: 1.6rem;
+  margin: 0 1.6rem;
 }
 .affiliated-pages-container:not(:last-child) {
   border-bottom: 1px solid var(--color-faint);
@@ -699,8 +722,8 @@ svg {
 }
 
 .affiliated-pages-advert-image {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
 }
 
 .affiliated-pages-details {
@@ -713,6 +736,7 @@ svg {
   line-height: 2rem;
   color: var(--color-text);
   padding-bottom: 0.4rem;
+  display: block;
 }
 .affiliated-pages-advert-category {
   font-size: 1.2rem;
@@ -720,6 +744,7 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text);
   padding-bottom: 0.8rem;
+  display: block;
 }
 .affiliated-pages-advert-type {
   font-size: 1.2rem;
@@ -727,16 +752,19 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text-light);
   padding-bottom: 0.4rem;
+  display: block;
 }
 
 .affiliated-pages-container button {
-  margin: 0 auto;
+  margin-top: 1.2rem;
+  margin-left: -0.4rem;
   margin-bottom: 1.6rem;
 }
 
 /* PAGE SUGGESTIONS */
 .page-suggestions-container {
-  margin: 1.6rem;
+  /* margin: 1.6rem; */
+  margin: 0 1.6rem;
 }
 .page-suggestions-container:not(:last-child) {
   border-bottom: 1px solid var(--color-faint);
@@ -760,8 +788,8 @@ svg {
 }
 
 .page-suggestions-page-image {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
 }
 
 .page-suggestions-details {
@@ -774,6 +802,7 @@ svg {
   line-height: 2rem;
   color: var(--color-text);
   padding-bottom: 0.4rem;
+  display: block;
 }
 .page-suggestions-page-category {
   font-size: 1.2rem;
@@ -781,6 +810,7 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text);
   padding-bottom: 0.8rem;
+  display: block;
 }
 .page-suggestions-page-followers {
   font-size: 1.2rem;
@@ -788,10 +818,12 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text-light);
   padding-bottom: 0.4rem;
+  display: block;
 }
 
 .page-suggestions-container button {
-  margin: 0 auto;
+  margin-top: 1.2rem;
+  margin-left: -0.4rem;
   margin-bottom: 1.6rem;
 }
 
@@ -804,7 +836,7 @@ svg {
   font-weight: 600;
   line-height: 1.5;
   font-size: 1.6rem;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   display: inline-block;
 }
 
@@ -917,6 +949,7 @@ svg {
 .button-primary-ghost:hover:not([disabled]) {
   background-color: var(--btn-primary-ghost-bg-on-hover);
   box-shadow: inset 0 0 0 1px var(--btn-primary-ghost);
+  text-decoration: none;
 }
 
 .button-secondary-icon {
