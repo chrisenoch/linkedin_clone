@@ -73,6 +73,24 @@ li {
 a,
 button {
   cursor: pointer;
+  color: currentColor;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.link-to-primary,
+.link-to-primary:link,
+.link-to-primary:visited {
+  color: currentColor;
+}
+
+.link-to-primary:hover,
+.link-to-primary:active {
+  text-decoration: underline;
+  color: var(--color-primary);
 }
 
 img,
@@ -917,6 +935,7 @@ svg {
 .button-primary-ghost:hover:not([disabled]) {
   background-color: var(--btn-primary-ghost-bg-on-hover);
   box-shadow: inset 0 0 0 1px var(--btn-primary-ghost);
+  text-decoration: none;
 }
 
 .button-secondary-icon {
