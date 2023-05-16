@@ -81,6 +81,11 @@ a:visited {
   text-decoration: none;
 }
 
+.link-to-underline:hover,
+.link-to-underline:active {
+  text-decoration: underline;
+}
+
 .link-to-primary,
 .link-to-primary:link,
 .link-to-primary:visited {
@@ -731,6 +736,7 @@ svg {
   line-height: 2rem;
   color: var(--color-text);
   padding-bottom: 0.4rem;
+  display: block;
 }
 .affiliated-pages-advert-category {
   font-size: 1.2rem;
@@ -738,6 +744,7 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text);
   padding-bottom: 0.8rem;
+  display: block;
 }
 .affiliated-pages-advert-type {
   font-size: 1.2rem;
@@ -745,6 +752,7 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text-light);
   padding-bottom: 0.4rem;
+  display: block;
 }
 
 .affiliated-pages-container button {
@@ -754,7 +762,8 @@ svg {
 
 /* PAGE SUGGESTIONS */
 .page-suggestions-container {
-  margin: 1.6rem;
+  /* margin: 1.6rem; */
+  margin: 0 1.6rem;
 }
 .page-suggestions-container:not(:last-child) {
   border-bottom: 1px solid var(--color-faint);
@@ -792,6 +801,7 @@ svg {
   line-height: 2rem;
   color: var(--color-text);
   padding-bottom: 0.4rem;
+  display: block;
 }
 .page-suggestions-page-category {
   font-size: 1.2rem;
@@ -799,6 +809,7 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text);
   padding-bottom: 0.8rem;
+  display: block;
 }
 .page-suggestions-page-followers {
   font-size: 1.2rem;
@@ -806,6 +817,7 @@ svg {
   line-height: 1.33333rem;
   color: var(--color-text-light);
   padding-bottom: 0.4rem;
+  display: block;
 }
 
 .page-suggestions-container button {
