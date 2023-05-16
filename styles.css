@@ -706,7 +706,7 @@ svg {
 }
 /* $AFFILIATED PAGES */
 .affiliated-pages-container {
-  margin: 1.6rem;
+  margin: 0 1.6rem;
 }
 .affiliated-pages-container:not(:last-child) {
   border-bottom: 1px solid var(--color-faint);
@@ -722,8 +722,8 @@ svg {
 }
 
 .affiliated-pages-advert-image {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
 }
 
 .affiliated-pages-details {
@@ -787,8 +787,8 @@ svg {
 }
 
 .page-suggestions-page-image {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
 }
 
 .page-suggestions-details {
@@ -834,7 +834,7 @@ svg {
   font-weight: 600;
   line-height: 1.5;
   font-size: 1.6rem;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   display: inline-block;
 }
 
