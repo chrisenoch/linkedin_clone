@@ -9,7 +9,7 @@
   --color-text: rgba(0, 0, 0, 0.9);
   --color-text-light: rgba(0, 0, 0, 0.6);
 
-  --color-faint: rgba(0, 0, 0, 0.08);
+  --color-faint: hsla(0, 0%, 0%, 0.08);
 
   --input-background: rgb(238 243 248);
 
