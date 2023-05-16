@@ -1088,12 +1088,20 @@ svg {
   display: none;
 }
 
-.bullet-small {
-  vertical-align: middle;
-  background-color: currentColor;
-  height: 0.2rem;
-  width: 0.2rem;
-  border-radius: 50%;
+.inline-bullet:after {
+  content: "\00B7\0020\0020\0020";
+  margin-left: 4px;
+}
+
+.inline-bullet-bold:after {
+  content: "\00B7\0020\0020\0020";
+  margin-left: 4px;
+  font-weight: 700;
+}
+
+.inline-bullet-lg:after {
+  content: "•";
+  margin-left: 4px;
 }
 
 .color-action {
