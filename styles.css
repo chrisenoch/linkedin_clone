@@ -270,8 +270,8 @@ svg {
   font-weight: 600;
 }
 
-#subnav-item-active {
-  color: var(--color-attention);
+.subnav-item-active {
+  color: var(--color-attention) !important;
   font-weight: 700;
   border-bottom: 2px solid var(--color-attention);
 }
@@ -316,9 +316,6 @@ svg {
 .hero-buttons-container > .button-primary {
   padding: 0.6rem 3.5rem 0.6rem 3.5rem;
 }
-.hero-container-top-wrapper {
-  border-bottom: 1px solid var(--color-faint);
-}
 
 .hero-buttons-container .button:not(:last-child) {
   margin-right: 1rem;
@@ -341,10 +338,6 @@ svg {
 .about-container-top {
   padding: 0rem 2.5rem;
   margin-bottom: 2.4rem;
-}
-
-.about-container-top-wrapper {
-  border-bottom: 1px solid var(--color-faint);
 }
 
 .about-container-bottom {
@@ -380,9 +373,6 @@ svg {
 .newsletter-title {
   padding-bottom: 1.6rem;
 }
-
-/* .newsletter-content {
-} */
 
 .newsletter-right {
 }
@@ -427,10 +417,6 @@ svg {
   padding: 2.4rem;
 }
 
-.recently-posted-videos-container-top-wrapper {
-  border-bottom: 1px solid var(--color-faint);
-}
-
 .recently-posted-videos-container-bottom {
   text-align: center;
 }
@@ -465,7 +451,7 @@ svg {
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: 400;
-  color: var(--color-text);
+  color: var(--color-dark-2);
 }
 
 .recently-posted-videos-cta {
@@ -475,25 +461,6 @@ svg {
   font-size: 1.6rem;
   padding: 1.2rem 0;
   display: inline-block;
-}
-
-.recently-posted-videos-description a {
-  text-decoration: none;
-}
-
-.recently-posted-videos-description a:link,
-.recently-posted-videos-description a:visited {
-  color: var(--nav-text);
-}
-
-.recently-posted-videos-description a:hover {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
-
-.recently-posted-videos-description a:active {
-  color: var(--color-primary);
-  background-color: var(--container-bg-tint);
 }
 
 /*PAGE POSTS */
@@ -509,10 +476,6 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-.page-posts-container-top-wrapper {
-  border-bottom: 1px solid var(--color-faint);
 }
 
 .page-posts-container-bottom {
@@ -771,10 +734,6 @@ svg {
   margin: 0 1.6rem;
 }
 .page-suggestions-container:not(:last-child) {
-  border-bottom: 1px solid var(--color-faint);
-}
-
-.page-suggestions-container-top-wrapper {
   border-bottom: 1px solid var(--color-faint);
 }
 
