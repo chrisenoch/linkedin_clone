@@ -834,6 +834,15 @@ svg {
   display: block;
 }
 
+.suggested-content-cta {
+  color: var(--color-text-light);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1rem 0.8rem;
+  display: inline-block;
+}
+
 /* $LAYOUT */
 
 .page-container {
