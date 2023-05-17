@@ -235,26 +235,6 @@ svg {
   width: 8rem;
 }
 
-/* .nav svg {
-  display: block;
-} */
-
-.home-container::after {
-  content: "";
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  position: absolute;
-  top: -2px;
-  right: -4px;
-  color: white;
-  text-align: center;
-  line-height: 15px;
-  font-size: 1rem;
-  background-color: white;
-  border: 5px solid var(--color-action);
-}
-
 /* $SUBNAVIGATION */
 .subnav {
   font-size: 1.6rem;
@@ -1059,6 +1039,12 @@ svg {
   line-height: 15px;
   font-size: 1rem;
   display: none;
+}
+
+.badge-circle-empty {
+  display: none;
+  background-color: white;
+  border: 5px solid var(--color-action);
 }
 
 .inline-bullet:after {
