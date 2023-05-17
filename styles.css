@@ -642,6 +642,12 @@ svg {
   gap: 1.2rem;
 }
 
+.suggested-content-image-container {
+  min-width: 48px; /* min-width necessary to override width as this is a flex-item, which treats width as auto and as an ideal size */
+  max-width: 48px;
+  height: 48px;
+}
+
 .suggested-content-main img {
   width: 48px;
   height: 48px;
@@ -714,7 +720,6 @@ svg {
   width: 113rem;
   display: flex;
   margin: 0 auto;
-  display: flex;
 }
 
 .main-container {
