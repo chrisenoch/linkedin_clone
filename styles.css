@@ -90,12 +90,6 @@ a:visited {
   text-decoration: underline;
 }
 
-.link-to-primary,
-.link-to-primary:link,
-.link-to-primary:visited {
-  color: currentColor;
-}
-
 .link-to-primary:hover,
 .link-to-primary:active {
   text-decoration: underline;
@@ -544,22 +538,7 @@ svg {
 }
 
 .page-posts-card-description a {
-  text-decoration: none;
-}
-
-.page-posts-card-description a:link,
-.page-posts-card-description a:visited {
   color: var(--color-dark-2);
-}
-
-.page-posts-card-description a:hover {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
-
-.page-posts-card-description a:active {
-  color: var(--color-primary);
-  background-color: var(--container-bg-tint);
 }
 
 .page-posts-card-media-container {
