@@ -316,7 +316,7 @@ svg {
 .hero-buttons-container > .button-primary {
   padding: 0.6rem 3.5rem 0.6rem 3.5rem;
 }
-.hero-buttons-container-wrapper {
+.hero-container-top-wrapper {
   border-bottom: 1px solid var(--color-faint);
 }
 
@@ -1075,6 +1075,11 @@ svg {
 }
 
 /* $UTILITIES */
+
+.border-bottom-wrapper {
+  border-bottom: 1px solid var(--color-faint);
+}
+
 .absolute-centre {
   position: absolute;
   top: 50%;
