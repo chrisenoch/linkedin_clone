@@ -656,7 +656,6 @@ svg {
 .affiliated-pages-details button {
   margin-top: 1.2rem;
   margin-left: -0.4rem;
-  margin-bottom: 1.6rem;
 }
 
 .affiliated-pages-advert-title {
@@ -747,19 +746,18 @@ svg {
 .page-suggestions-container button {
   margin-top: 1.2rem;
   margin-left: -0.4rem;
-  margin-bottom: 1.6rem;
 }
 
-.page-suggestions-container:last-child button {
+/* .page-suggestions-container:last-child button {
   margin-bottom: 3.2rem;
-}
+} */
 
 .page-suggestions-container-cta {
   color: var(--color-text-light);
   font-weight: 600;
   line-height: 1.5;
   font-size: 1.6rem;
-  padding: 1rem 0;
+  padding: 1rem 0.8rem;
   display: inline-block;
 }
 
