@@ -53,7 +53,7 @@
           <div class="nav-centre">
             <a href="#">
               <div class="nav-icon-container">
-                <div class="svg-container home-container">
+                <div class="svg-container">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -65,7 +65,8 @@
                     <path
                       d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7z"></path>
                   </svg>
-                  <div class="badge-circle-small color-action">2</div>
+                  <div
+                    class="badge-circle-small badge-circle-empty display-block"></div>
                 </div>
                 <span>Home</span>
               </div>
@@ -229,32 +230,32 @@
     <div class="page-container">
       <main class="main-container">
         <section class="section-container">
-          <div class="hero-image-container">
-            <img
-              class="hero-image"
-              src="images/hero.jpg"
-              alt="Linkedin Learning: Keep learning in moments that matter" />
-            <img
-              src="images/linkedin_learning.jpg"
-              alt="LinkedIn Learning Logo"
-              class="hero-image-secondary" />
-          </div>
+          <div class="border-bottom-wrapper">
+            <div class="hero-image-container">
+              <img
+                class="hero-image"
+                src="images/hero.jpg"
+                alt="Linkedin Learning: Keep learning in moments that matter" />
+              <img
+                src="images/linkedin_learning.jpg"
+                alt="LinkedIn Learning Logo"
+                class="hero-image-secondary" />
+            </div>
 
-          <div class="hero-title-container">
-            <h1 class="h1">LinkedIn Learning</h1>
-            <!-- <p class="title-supplement"> -->
-            <p>
-              <!-- <div class="title-supplement-container"> -->
-              <span class="supplement mr1 inline-bullet"
-                >E-Learning Providers</span
-              ><span class="supplement inline-bullet mr1"
-                >Sunnyvale, California</span
-              ><span class="supplement mr1">845,555 followers</span>
-              <!-- </div> -->
-            </p>
-          </div>
+            <div class="hero-title-container">
+              <h1 class="h1">LinkedIn Learning</h1>
+              <!-- <p class="title-supplement"> -->
+              <p>
+                <!-- <div class="title-supplement-container"> -->
+                <span class="supplement mr1 inline-bullet"
+                  >E-Learning Providers</span
+                ><span class="supplement inline-bullet mr1"
+                  >Sunnyvale, California</span
+                ><span class="supplement mr1">845,555 followers</span>
+                <!-- </div> -->
+              </p>
+            </div>
 
-          <div class="hero-buttons-container-wrapper">
             <div class="hero-buttons-container flex">
               <button type="button" class="button button-primary">
                 <svg
@@ -290,7 +291,7 @@
           <nav class="subnav">
             <ul class="flex">
               <li>
-                <a href="#" id="subnav-item-active" class="subnav-item">Home</a>
+                <a href="#" class="subnav-item subnav-item-active">Home</a>
               </li>
               <li><a href="#" class="subnav-item">About</a></li>
               <li><a href="#" class="subnav-item">Posts</a></li>
@@ -300,7 +301,7 @@
           </nav>
         </section>
         <section class="section-container">
-          <div class="about-container-top-wrapper">
+          <div class="border-bottom-wrapper">
             <div class="about-container-top">
               <h2 class="h2 about-title">About</h2>
               <p class="about-text">
@@ -330,6 +331,7 @@
                   <div class="newsletter-image-container">
                     <figure>
                       <img
+                        loading="lazy"
                         src="images/learn_this_next.png"
                         alt="Learn this next"
                         class="newsletter-image-blurred" />
@@ -337,6 +339,7 @@
                   </div>
                   <figure>
                     <img
+                      loading="lazy"
                       aria-hidden="true"
                       src="images/learn_this_next.png"
                       alt=""
@@ -362,7 +365,7 @@
           </div>
         </section>
         <section class="section-container">
-          <div class="recently-posted-videos-container-top-wrapper">
+          <div class="border-bottom-wrapper">
             <div class="recently-posted-videos-container-top">
               <h2 class="h2 recently-posted-videos-title">
                 Recently posted videos
@@ -375,6 +378,7 @@
                     <div class="recently-posted-videos-image-container">
                       <figure>
                         <img
+                          loading="lazy"
                           src="images/recently_posted_videos.jpg"
                           alt="recently posted videos" />
                       </figure>
@@ -396,7 +400,7 @@
 
                   <div class="recently-posted-videos-right">
                     <p class="recently-posted-videos-description mt1">
-                      <a href="#">
+                      <a href="#" class="link-to-primary">
                         More workplaces are looking past degrees and experience
                         in favor of finding the skills they need, and building
                         those skills can help you get ahead
@@ -414,7 +418,7 @@
           >
         </section>
         <section class="section-container">
-          <div class="page-posts-container-top-wrapper">
+          <div class="border-bottom-wrapper">
             <div class="page-posts-container-top">
               <div class="page-posts-header-container">
                 <h2 class="h2 page-posts-title">Page posts</h2>
@@ -459,10 +463,11 @@
               <div class="page-posts-card-container">
                 <div class="page-posts-width-wrapper ml4">
                   <div class="section-container flex-0">
-                    <div class="page-posts-card-header">
+                    <header class="page-posts-card-header">
                       <div class="page-posts-card-thumbnail">
                         <figure>
                           <img
+                            loading="lazy"
                             src="images/linkedin_learning.jpg"
                             alt="LinkedIn Learning thumbnail" />
                         </figure>
@@ -521,17 +526,18 @@
                           </svg>
                         </span>
                       </button>
-                    </div>
+                    </header>
                     <p class="page-posts-card-description">
                       It’s simple. When your skills are in demand, you’re in
                       demand. Learn what employers are looking
-                      <a href="#">... see more</a>
+                      <a href="#" class="link-to-primary">... see more</a>
                     </p>
                     <!-- <div class="page-posts-card-left"> -->
-                    <div class="page-posts-card-image-container">
+                    <div class="page-posts-card-media-container">
                       <a href="#">
                         <figure>
                           <img
+                            loading="lazy"
                             src="images/learn_skills.jpg"
                             alt="recently posted videos" /></figure
                       ></a>
@@ -554,6 +560,7 @@
                       <span>
                         <span
                           ><img
+                            loading="lazy"
                             src="images/social_like_icon.svg"
                             alt="social like
                         icon"
@@ -562,6 +569,7 @@
                       <span class="supplement-small-with-overlap-left">
                         <span
                           ><img
+                            loading="lazy"
                             src="images/social_love_icon.svg"
                             alt="social love icon"
                         /></span>
@@ -569,6 +577,7 @@
                       <span class="supplement-small-with-overlap-left">
                         <span
                           ><img
+                            loading="lazy"
                             src="images/social_clap_icon.svg"
                             alt="social clap icon"
                         /></span>
@@ -593,7 +602,7 @@
                       >
                     </p>
 
-                    <div class="page-posts-card-social-actions-container">
+                    <footer class="page-posts-card-social-actions-container">
                       <button
                         type="button"
                         class="button button-square button-small button-secondary-icon flex-centre">
@@ -636,7 +645,10 @@
                         class="button button-square button-small button-secondary-icon flex-centre">
                         <span class="page-posts-card-social-action-container">
                           <!-- <div> -->
-                          <img src="images/repost.svg" alt="repost" />
+                          <img
+                            loading="lazy"
+                            src="images/repost.svg"
+                            alt="repost" />
                           <!-- </div> -->
                           <span>Repost</span>
                         </span>
@@ -658,17 +670,18 @@
                           <span>Send</span>
                         </span>
                       </button>
-                    </div>
+                    </footer>
                   </div>
                 </div>
               </div>
               <div class="page-posts-card-container">
                 <div class="page-posts-width-wrapper ml4">
                   <div class="section-container flex-0">
-                    <div class="page-posts-card-header">
+                    <header class="page-posts-card-header">
                       <div class="page-posts-card-thumbnail">
                         <figure>
                           <img
+                            loading="lazy"
                             src="images/linkedin_learning.jpg"
                             alt="LinkedIn Learning logo" />
                         </figure>
@@ -725,17 +738,18 @@
                           </svg>
                         </span>
                       </button>
-                    </div>
+                    </header>
                     <p class="page-posts-card-description">
                       Today is the last day to learn the most in-demand skills
                       for free! Whatever your industry, we
-                      <a href="#">... see more</a>
+                      <a href="#" class="link-to-primary">... see more</a>
                     </p>
                     <!-- <div class="page-posts-card-left"> -->
-                    <div class="page-posts-card-image-container">
+                    <div class="page-posts-card-media-container">
                       <a href="#">
                         <figure>
                           <img
+                            loading="lazy"
                             src="images/time_to_shine.jpg"
                             alt="recently posted videos" /></figure
                       ></a>
@@ -745,6 +759,7 @@
                       <span>
                         <span
                           ><img
+                            loading="lazy"
                             src="images/social_like_icon.svg"
                             alt="social like
                         icon"
@@ -753,6 +768,7 @@
                       <span class="supplement-small-with-overlap-left">
                         <span
                           ><img
+                            loading="lazy"
                             src="images/social_love_icon.svg"
                             alt="social love icon"
                         /></span>
@@ -760,6 +776,7 @@
                       <span class="supplement-small-with-overlap-left">
                         <span
                           ><img
+                            loading="lazy"
                             src="images/social_clap_icon.svg"
                             alt="social clap icon"
                         /></span>
@@ -778,7 +795,7 @@
                       >
                     </p>
 
-                    <div class="page-posts-card-social-actions-container">
+                    <footer class="page-posts-card-social-actions-container">
                       <button
                         type="button"
                         class="button button-square button-small button-secondary-icon flex-centre">
@@ -821,7 +838,10 @@
                         class="button button-square button-small button-secondary-icon flex-centre">
                         <span class="page-posts-card-social-action-container">
                           <!-- <div> -->
-                          <img src="images/repost.svg" alt="repost" />
+                          <img
+                            loading="lazy"
+                            src="images/repost.svg"
+                            alt="repost" />
                           <!-- </div> -->
                           <span>Repost</span>
                         </span>
@@ -843,7 +863,7 @@
                           <span>Send</span>
                         </span>
                       </button>
-                    </div>
+                    </footer>
                   </div>
                 </div>
               </div>
@@ -877,9 +897,12 @@
               ></a>
             </div>
             <h2 class="mb3">Get the latest jobs and industry news</h2>
-            <div class="main-advert-image mb3">
+            <div class="main-advert-image-container mb3">
               <a href="#"
-                ><img src="./images/onfido.jpg" alt="Advert for Onfido"
+                ><img
+                  loading="lazy"
+                  src="./images/onfido.jpg"
+                  alt="Advert for Onfido"
               /></a>
             </div>
 
@@ -893,24 +916,26 @@
           </div>
         </section>
         <section class="section-container">
-          <div class="affiliated-pages-container">
-            <h2 class="h2 affiliated-pages-title">Affiliated pages</h2>
+          <div class="suggested-content-container">
+            <h2 class="h2 suggested-content-title">Affiliated pages</h2>
 
-            <div class="affiliated-pages-advert">
-              <img
-                src="images/staff_instructors.jpg"
-                alt="Staff instructors logo thumbnail"
-                class="affiliated-pages-advert-image" />
-              <div class="affiliated-pages-details">
+            <div class="suggested-content-main">
+              <a href="#" class="suggested-content-image-container">
+                <img
+                  loading="lazy"
+                  src="images/staff_instructors.jpg"
+                  alt="Staff instructors logo thumbnail"
+              /></a>
+              <div class="suggested-content-details">
                 <a
                   href="#"
-                  class="affiliated-pages-advert-title link-to-underline">
+                  class="suggested-content-details-title link-to-underline">
                   Staff [in]structors: LinkedIn's teaching team
                 </a>
-                <a href="#" class="affiliated-pages-advert-category"
+                <a href="#" class="suggested-content-details-category"
                   >E-learning</a
                 >
-                <a class="affiliated-pages-advert-type">Showcase page</a>
+                <a class="suggested-content-details-type">Showcase page</a>
                 <button type="button" class="button button-secondary-ghost">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -924,35 +949,25 @@
                 </button>
               </div>
             </div>
-
-            <!-- <button type="button" class="button button-secondary-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                data-supported-dps="16x16"
-                fill="currentColor"
-                class="button-icon">
-                <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
-              </svg>
-              <span>Follow</span>
-            </button> -->
           </div>
-          <div class="affiliated-pages-container">
-            <div class="affiliated-pages-advert">
-              <img
-                src="images/linkedin_logo.jpg"
-                alt="LinkedIn logo"
-                class="affiliated-pages-advert-image" />
-              <div class="affiliated-pages-details">
+          <div class="suggested-content-container">
+            <div class="suggested-content-main">
+              <a href="#" class="suggested-content-image-container">
+                <img
+                  loading="lazy"
+                  src="images/linkedin_logo.jpg"
+                  alt="LinkedIn logo"
+              /></a>
+              <div class="suggested-content-details">
                 <a
                   href="#"
-                  class="affiliated-pages-advert-title link-to-underline"
+                  class="suggested-content-details-title link-to-underline"
                   >LinkedIn</a
                 >
-                <a class="affiliated-pages-advert-category">
+                <a class="suggested-content-details-category">
                   Software development
                 </a>
-                <a class="affiliated-pages-advert-type">Parent</a>
+                <a class="suggested-content-details-type">Parent</a>
                 <button type="button" class="button button-secondary-ghost">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -969,25 +984,27 @@
           </div>
         </section>
         <section class="section-container">
-          <div class="page-suggestions-container-top-wrapper">
-            <div class="page-suggestions-container">
-              <h2 class="h2 page-suggestions-title">People also follow</h2>
+          <div class="border-bottom-wrapper pb3">
+            <div class="suggested-content-container">
+              <h2 class="h2 suggested-content-title">People also follow</h2>
 
-              <div class="page-suggestions-page">
-                <img
-                  src="images/economic_times.jpg"
-                  alt="Economic Times logo"
-                  class="page-suggestions-page-image" />
-                <div class="page-suggestions-details">
+              <div class="suggested-content-main">
+                <a href="#" class="suggested-content-image-container">
+                  <img
+                    loading="lazy"
+                    src="images/economic_times.jpg"
+                    alt="Economic Times logo"
+                /></a>
+                <div class="suggested-content-details">
                   <a
                     href="#"
-                    class="page-suggestions-page-title link-to-underline"
+                    class="suggested-content-details-title link-to-underline"
                     >The Economic Times</a
                   >
-                  <a href="#" class="page-suggestions-page-category">
+                  <a href="#" class="suggested-content-details-category">
                     Technology, Information and Internet
                   </a>
-                  <a href="#" class="page-suggestions-page-followers">
+                  <a href="#" class="suggested-content-details-followers">
                     2,712,828 followers
                   </a>
                   <button type="button" class="button button-secondary-ghost">
@@ -1004,22 +1021,24 @@
                 </div>
               </div>
             </div>
-            <div class="page-suggestions-container">
-              <div class="page-suggestions-page">
-                <img
-                  src="images/MHFA.jpg"
-                  alt="Mental Health First Aid (MHFA) logo"
-                  class="page-suggestions-page-image" />
-                <div class="page-suggestions-details">
+            <div class="suggested-content-container">
+              <div class="suggested-content-main">
+                <a href="#" class="suggested-content-image-container">
+                  <img
+                    loading="lazy"
+                    src="images/MHFA.jpg"
+                    alt="Mental Health First Aid (MHFA) logo"
+                /></a>
+                <div class="suggested-content-details">
                   <a
                     href="#"
-                    class="page-suggestions-page-title link-to-underline">
+                    class="suggested-content-details-title link-to-underline">
                     Mental Health First Aid (MHFA) England
                   </a>
-                  <a href="#" class="page-suggestions-page-category">
+                  <a href="#" class="suggested-content-details-category">
                     Professional Training and Coaching
                   </a>
-                  <a href="#" class="page-suggestions-page-followers">
+                  <a href="#" class="suggested-content-details-followers">
                     202,093 followers
                   </a>
                   <button type="button" class="button button-secondary-ghost">
@@ -1036,22 +1055,24 @@
                 </div>
               </div>
             </div>
-            <div class="page-suggestions-container">
-              <div class="page-suggestions-page">
-                <img
-                  src="images/Jacobs.jpg"
-                  alt="Jacobs Business Consulting and Services logo"
-                  class="page-suggestions-page-image" />
-                <div class="page-suggestions-details">
+            <div class="suggested-content-container">
+              <div class="suggested-content-main">
+                <a href="#" class="suggested-content-image-container">
+                  <img
+                    loading="lazy"
+                    src="images/Jacobs.jpg"
+                    alt="Jacobs Business Consulting and Services logo"
+                /></a>
+                <div class="suggested-content-details">
                   <a
                     href="#"
-                    class="page-suggestions-page-title link-to-underline"
+                    class="suggested-content-details-title link-to-underline"
                     >Jacobs</a
                   >
-                  <a href="#" class="page-suggestions-page-category">
+                  <a href="#" class="suggested-content-details-category">
                     Business Consulting and Services
                   </a>
-                  <a href="#" class="page-suggestions-page-followers">
+                  <a href="#" class="suggested-content-details-followers">
                     1,479,327 followers
                   </a>
                   <button type="button" class="button button-secondary-ghost">
@@ -1069,16 +1090,14 @@
               </div>
             </div>
           </div>
-          <a href="#"
-            ><div class="page-suggestions-container-bottom">
-              <p class="page-suggestions-container-cta">
-                See all recommended pages
-              </p>
-            </div></a
-          >
+          <div class="suggested-content-container-bottom">
+            <a href="#">
+              <p class="suggested-content-cta">See all recommended pages</p>
+            </a>
+          </div>
         </section>
       </aside>
-      <!-- <img src="images/learn_skills.jpg" alt="" /> -->
+      <!-- <img loading="lazy"  src="images/learn_skills.jpg" alt="" /> -->
     </div>
   </body>
 </html>
