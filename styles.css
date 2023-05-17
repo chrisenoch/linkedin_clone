@@ -172,7 +172,7 @@ svg {
   color: var(--nav-text);
 
   border-bottom: 1px solid var(--color-faint);
-  overflow: hidden; /* border-bottom: 1px solid var(--color-faint); */
+  overflow: hidden;
 }
 
 .nav a {
@@ -549,7 +549,7 @@ svg {
 
 .page-posts-card-description a:link,
 .page-posts-card-description a:visited {
-  color: var(--nav-text);
+  color: var(--color-dark-2);
 }
 
 .page-posts-card-description a:hover {
