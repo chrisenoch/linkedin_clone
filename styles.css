@@ -6,32 +6,36 @@
   --color-action: rgb(203, 16, 23);
   --color-attention: rgb(5, 118, 65);
 
-  --color-text: rgba(0, 0, 0, 0.9);
-  --color-text-light: rgba(0, 0, 0, 0.6);
+  --color-dark-1: rgba(0, 0, 0, 0.9);
+  --color-dark-2: rgba(0, 0, 0, 0.6);
+  --color-dark-3: rgba(0, 0, 0, 0.3);
 
-  --color-faint: hsla(0, 0%, 0%, 0.08);
+  --color-faint: rgba(0, 0, 0, 0.08);
+
+  --color-text: var(--color-dark-1);
+  --color-text-light: var(--color-dark-2);
 
   --input-background: rgb(238 243 248);
 
-  --nav-text: rgba(0, 0, 0, 0.6);
+  --nav-text: var(--color-dark-2);
   --nav-text-dark: rgba(0, 0, 0, 0.9);
   --nav-active: rgb(25, 25, 25);
 
-  --btn-primary: rgb(10, 102, 194);
+  --btn-primary: var(--color-primary);
   --btn-primary-on-hover: rgb(0, 65, 130);
 
   --btn-primary-ghost: rgb(10, 102, 194);
   --btn-primary-ghost-border: rgb(10, 102, 194);
-  --btn-primary-ghost-bg-on-hover: #e2f0fe;
+  --btn-primary-ghost-bg-on-hover: rgb(226, 240, 254);
 
-  --btn-secondary-ghost: rgba(0, 0, 0, 0.6);
-  --btn-secondary-ghost-border: rgba(0, 0, 0, 0.6);
-  --btn-secondary-ghost-bg-on-hover: rgba(0, 0, 0, 0.08);
+  --btn-secondary-ghost: var(--color-dark-2);
+  --btn-secondary-ghost-border: var(--color-dark-2);
+  --btn-secondary-ghost-bg-on-hover: var(--color-faint);
 
-  --btn-secondary: rgba(0, 0, 0, 0.6);
+  --btn-secondary: var(--color-dark-2);
 
-  --btn-text-disabled: rgba(0, 0, 0, 0.3);
-  --btn-bg-disabled: rgba(0, 0, 0, 0.08);
+  --btn-text-disabled: var(--color-dark-3);
+  --btn-bg-disabled: var(--color-faint);
 
   /* font-sizes */
 }
