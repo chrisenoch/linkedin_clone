@@ -644,7 +644,7 @@ svg {
   padding: 1.6rem 0;
 }
 
-.affiliated-pages-advert-image {
+.affiliated-pages-advert img {
   width: 48px;
   height: 48px;
 }
@@ -710,6 +710,11 @@ svg {
   padding-left: 1.2rem;
 }
 
+.page-suggestions-details button {
+  margin-top: 1.2rem;
+  margin-left: -0.4rem;
+}
+
 .page-suggestions-page-title {
   font-size: 1.6rem;
   font-weight: 600;
@@ -743,22 +748,90 @@ svg {
   display: block;
 }
 
-.page-suggestions-container button {
-  margin-top: 1.2rem;
-  margin-left: -0.4rem;
-}
-
 /* .page-suggestions-container:last-child button {
   margin-bottom: 3.2rem;
 } */
 
-.page-suggestions-container-cta {
+.page-suggestions-cta {
   color: var(--color-text-light);
   font-weight: 600;
   line-height: 1.5;
   font-size: 1.6rem;
   padding: 1rem 0.8rem;
   display: inline-block;
+}
+
+/* SUGGESTED CONTENT */
+.suggested-content-container {
+  margin: 0 1.6rem;
+}
+.suggested-content-container:not(:last-child) {
+  border-bottom: 1px solid var(--color-faint);
+}
+
+.suggested-content-title {
+  padding: 1.6rem 0;
+}
+
+.suggested-content-main {
+  display: flex;
+  padding: 1.6rem 0;
+}
+
+.suggested-content-main img {
+  width: 48px;
+  height: 48px;
+}
+
+.suggested-content-details {
+  padding-left: 1.2rem;
+}
+
+.suggested-content-details button {
+  margin-top: 1.2rem;
+  margin-left: -0.4rem;
+}
+
+.suggested-content-details-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: var(--color-text);
+  padding-bottom: 0.4rem;
+  display: block;
+}
+.suggested-content-details-category {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text);
+  padding-bottom: 0.8rem;
+  display: block;
+}
+.suggested-content-details-type {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text-light);
+  padding-bottom: 0.4rem;
+  display: block;
+}
+
+.suggested-content-details-followers {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.33333rem;
+  color: var(--color-text-light);
+  padding-bottom: 0.4rem;
+  display: block;
+}
+
+.suggested-content-container-bottom {
+  text-align: center;
+}
+
+.suggested-content-container-bottom a {
+  display: block;
 }
 
 /* $LAYOUT */
