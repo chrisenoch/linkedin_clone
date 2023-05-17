@@ -120,7 +120,7 @@ svg {
   width: 100%;
 }
 .search-box {
-  height: 3.5rem;
+  height: 3.4rem;
   /* width: 28rem; */
   width: 38.5rem;
   font-size: 1.4rem;
@@ -188,14 +188,10 @@ svg {
 
 .nav-container {
   height: 100%;
-  width: 113rem;
+  width: 112.8rem;
   display: flex;
   align-items: center;
   margin: 0 auto;
-}
-
-.nav-list {
-  display: flex;
 }
 
 .nav-left {
@@ -272,7 +268,7 @@ svg {
 }
 
 .hero-title-container {
-  padding: 0rem 2.5rem;
+  padding: 0rem 2.4rem;
   margin-bottom: 3.2rem;
 }
 
@@ -283,7 +279,7 @@ svg {
 }
 
 .hero-buttons-container {
-  padding: 0rem 2.5rem;
+  padding: 0rem 2.4rem;
   margin-bottom: 1.6rem;
 }
 
@@ -305,12 +301,12 @@ svg {
   border: 2px solid white;
   position: absolute;
   top: 7.5rem;
-  left: 2.5rem;
+  left: 2.4rem;
 }
 
 /*ABOUT US */
 .about-container-top {
-  padding: 0rem 2.5rem;
+  padding: 0rem 2.4rem;
   margin-bottom: 2.4rem;
 }
 
@@ -620,8 +616,8 @@ svg {
 .main-advert-details {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .main-advert-details-company-name {
@@ -643,6 +639,7 @@ svg {
 .suggested-content-main {
   display: flex;
   padding: 1.6rem 0;
+  gap: 1.2rem;
 }
 
 .suggested-content-main img {
@@ -651,7 +648,7 @@ svg {
 }
 
 .suggested-content-details {
-  padding-left: 1.2rem;
+  /* padding-left: 1.2rem; */
 }
 
 .suggested-content-details button {
@@ -723,7 +720,7 @@ svg {
 .main-container {
   min-height: 100vh;
   width: 80.4rem;
-  margin-right: 2.5rem;
+  margin-right: 2.4rem;
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
 }
@@ -856,7 +853,7 @@ svg {
   height: 1.6rem;
   width: 1.6rem;
   color: currentColor;
-  margin-right: 4px;
+  margin-right: 0.4rem;
   align-self: center;
 }
 
@@ -962,7 +959,7 @@ svg {
   right: -4px;
   color: white;
   text-align: center;
-  line-height: 15px;
+  line-height: 1.5rem;
   font-size: 1rem;
   display: none;
 }
