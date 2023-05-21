@@ -9,3 +9,6 @@ Clone of [LinkedIn Learning](https://www.linkedin.com/showcase/linkedinlearning/
 
 ## Note on responsiveness
 - This project is not responsive. For my responsive design skills, please see my [travelnews](https://github.com/chrisenoch/travelnews) project, where I implement media queries with Sass conditionals.
+
+## Branches
+Please use the develop branch to view the project.
